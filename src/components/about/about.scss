@@ -1,0 +1,151 @@
+#about {
+    position: relative;
+    background-color: white;
+  
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      margin-left: 100px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      // margin: 1rem;
+    
+      .btn {
+        font-weight: 600;
+        transition: all 300ms ease;
+        padding: 1.5rem;
+        width: 10rem;
+        border-radius: 2rem;
+
+        a{
+          text-decoration: none;
+          color: black;
+        }
+    
+        
+        &.btn-color-2 {
+          border: 0.1rem solid rgb(163, 163, 163);
+          font-size: 20px; /* Increase font size */
+
+          
+  
+          &:hover {
+            cursor: pointer;
+            background: rgb(53, 53, 53);
+           color: white;
+          }
+        }
+
+        .download:hover{
+          color: white;
+        }
+        
+    
+        &.btn-color-2 {
+          background: none;
+
+    
+          &:hover {
+            border: rgb(255, 255, 255) 0.1rem solid;
+            
+          }
+        }
+      }
+
+      
+    }
+    
+
+    .about-containers {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+  
+    .about-details-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 1;
+    }
+  
+    .about-pic {
+      border-radius: 2rem;
+      max-height: 453.5px; /* Set a specific height for the image */
+    }
+  
+    .details-container {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 2rem;
+      border: 0.1rem solid rgb(163, 163, 163);
+      text-align: center;
+    }
+
+    .details-container p{
+      padding-top: 10px;
+  
+      
+    }
+
+    .text-container{
+      margin-top: -30px;
+      padding-right: 30px;
+      font-family: 'EB Garamond', serif;
+      font-family: 'Roboto', sans-serif;
+      
+    }
+  
+    
+    .icon {
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+      }
+
+    .section-container {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      height: 80%;
+      align-items: center;
+    }
+  
+    .section__pic-container {
+        margin: auto 0 auto -15rem;
+        overflow: hidden; /* Prevent scrollbars and cut off overflow */
+        &::-webkit-scrollbar {
+          display: none;
+        }
+    }
+    
+    /* New CSS for dividing the layout */
+    .section-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+    }
+  
+    .section__pic-container {
+      flex: 1; /* Take up 50% of the space */
+      display: flex;
+      justify-content: flex-end; /* Align image to the right */
+    
+    }
+  
+    .about-pic {
+      max-width: 100%; /* Ensure the image fits within its container */
+    }
+  
+    .about-details-container {
+      flex: 1; /* Take up 50% of the space */
+    }
+    
+  }
+  
