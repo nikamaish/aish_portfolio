@@ -1,4 +1,4 @@
-export const featuredPortfolio = [
+export const languages = [
     {
       id: 1,
       title: "C++",
@@ -12,27 +12,9 @@ export const featuredPortfolio = [
         "https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png",
     },
    
-    // {
-    //   id: 4,
-    //   title: "Relax Mobile App",
-    //   img:
-    //     "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
-    // },
-    // {
-    //   id: 5,
-    //   title: "Hero Web Design",
-    //   img:
-    //     "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Banking App",
-    //   img:
-    //     "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
-    // },
   ];
   
-  export const webPortfolio = [
+  export const frontend = [
     {
       id: 1,
       title: "HTML",
@@ -49,28 +31,24 @@ export const featuredPortfolio = [
       img: "https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "React JS",
       img: "https://shethink.in/wp-content/uploads/2021/07/react.js-img.png",
     },
     {
-      id: 4,
+      id: 6,
       title: "SAAS",
       img: "https://res.cloudinary.com/practicaldev/image/fetch/s--O2L2OS5E--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/lg9jjgv3nj383ykkjxew.png",
     },
     {
-      id: 5,
+      id: 7,
       title: "BootStrap",
       img: "https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png",
     },
-    // {
-    //   id: 6,
-    //   title: "Web Banking App",
-    //   img: "https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png",
-    // },
+   
   ];
   
-  export const mobilePortfolio = [
+  export const backend = [
     {
       id: 1,
       title: "Node JS",
@@ -95,60 +73,12 @@ export const featuredPortfolio = [
       img:
         "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png",
     },
-    // {
-    //   id: 5,
-    //   title: "Mobile Hero Design",
-    //   img:
-    //     "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Mobile Banking App",
-    //   img:
-    //     "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-    // },
+      
   ];
   
-  export const designPortfolio = [
-    {
-      id: 1,
-      title: "Design Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Design Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 3,
-      title: "Design E-commerce Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 4,
-      title: "Design Relax Mobile App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 5,
-      title: "Design Keser Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 6,
-      title: "Design Banking App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-  ];
+
   
-  export const contentPortfolio = [
+  export const tools = [
     {
       id: 1,
       title: "Git",
@@ -193,10 +123,6 @@ export const featuredPortfolio = [
     //     "https://code.visualstudio.com/opengraphimg/opengraph-blog.png",
     // },
     // {
-    //   id: 6,
-    //   title: "Content Banking App",
-    //   img:
-    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    // },
+    
   ];
   

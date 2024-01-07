@@ -3,58 +3,52 @@ import "./portfolio.scss"
 import {useStae} from "react"
 import PortfolioList from "../portfolioList/portfolioList";
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  languages,
+  frontend,
+  backend,
+  tools,
 } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = React.useState("web");
+  const [selected, setSelected] = React.useState("frontend");
   const [data, setData] = React.useState([]);
   const list = [
     {
-      id: "featured",
+      id: "languages",
       title: " Languages",
     },
     {
-      id: "web",
+      id: "frontend",
       title: "FrontEnd",
     },
     {
-      id: "mobile",
+      id: "backend",
       title: "BackEnd",
     },
-    // {
-    //   id: "design",
-    //   title: "design",
-    // },
     {
-      id: "content",
+      id: "tools",
       title: "Tools",
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "languages":
+        setData(languages);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "frontend":
+        setData(frontend);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "backend":
+        setData(backend);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "tools":
+        setData(tools);
         break;
-      case "content":
-        setData(contentPortfolio);
+     
         break;
       default:
-        setData(featuredPortfolio);
+        setData(frontend);
     }
   }, [selected]);
 
