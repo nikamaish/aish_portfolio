@@ -2,153 +2,187 @@
   position: relative;
   background-color: white;
 
-  
-    .title {
-      display: flex;
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-top: 70px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .btn {
+      font-weight: 600;
+      transition: all 300ms ease;
+      padding: 1.5rem;
+      width: 10rem;
+      border-radius: 2rem;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      &.btn-color-2 {
+        border: 0.1rem solid rgb(163, 163, 163);
+        font-size: 20px;
+
+        &:hover {
+          cursor: pointer;
+          background: rgb(53, 53, 53);
+          color: white;
+        }
+      }
+
+      .download:hover {
+        color: white;
+      }
+
+      &.btn-color-2 {
+        background: none;
+
+        &:hover {
+          border: rgb(255, 255, 255) 0.1rem solid;
+        }
+      }
+    }
+  }
+
+  .about-containers {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .about-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+  }
+
+  .about-pic {
+    border-radius: 2rem;
+    max-height: 453.5px;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+  }
+
+  .details-container p {
+    padding-top: 10px;
+  }
+
+  .text-container {
+    margin-top: -30px;
+    padding-right: 30px;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    height: 80%;
+    align-items: center;
+  }
+
+  .section__pic-container {
+    margin: auto 0 auto -15rem;
+    overflow: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  /* New CSS for dividing the layout */
+  .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__pic-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .about-pic {
+    max-width: 100%;
+  }
+
+  .about-details-container {
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+   
+     .section-container {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 40px;
-      margin-left: 100px;
-      margin-top: 70px;
+      text-align: center;
+      height: 120%; /* Adjusted height for small devices */
+    }
+    .title {
+      margin: auto;
+      margin-bottom: 50px;
+
     }
 
     .btn-container {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      // margin: 1rem;
-    
+      flex-direction: column;
+      align-items: center;
+
       .btn {
-        font-weight: 600;
-        transition: all 300ms ease;
-        padding: 1.5rem;
-        width: 10rem;
-        border-radius: 2rem;
-
-        a{
-          text-decoration: none;
-          color: black;
-        }
-    
-        
-        &.btn-color-2 {
-          border: 0.1rem solid rgb(163, 163, 163);
-          font-size: 20px; /* Increase font size */
-
-          
-  
-          &:hover {
-            cursor: pointer;
-            background: rgb(53, 53, 53);
-           color: white;
-          }
-        }
-
-        .download:hover{
-          color: white;
-        }
-        
-    
-        &.btn-color-2 {
-          background: none;
-
-    
-          &:hover {
-            border: rgb(255, 255, 255) 0.1rem solid;
-            
-          }
-        }
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 20vh;
       }
-
-      
     }
-    
 
     .about-containers {
       display: flex;
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-  
-    .about-details-container {
-      display: flex;
       flex-direction: column;
-      gap: 2rem;
-      flex: 1;
+      width: 60%;
+      margin: auto; /* Add this to center the container horizontally */
     }
-  
-    .about-pic {
-      border-radius: 2rem;
-      max-height: 453.5px; /* Set a specific height for the image */
-    }
-  
-    .details-container {
-      padding: 1.5rem;
-      background: white;
-      border-radius: 2rem;
-      border: 0.1rem solid rgb(163, 163, 163);
+
+    .section-container {
+      flex-direction: column;
       text-align: center;
     }
 
-    .details-container p{
-      padding-top: 10px;
-  
-      
+    .section__pic-container {
+      margin: auto;
+      order: -1;
     }
 
-    .text-container{
-      margin-top: -30px;
-      padding-right: 30px;
-      font-family: 'EB Garamond', serif;
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.7;
-      
-    }
-  
-    
-    .icon {
-        width: 50px; /* Adjust the width as needed */
-        height: 50px; /* Adjust the height as needed */
-      }
-
-    .section-container {
-      display: flex;
-      flex-direction: row;
-      gap: 4rem;
-      height: 80%;
-      align-items: center;
-    }
-  
-    .section__pic-container {
-        margin: auto 0 auto -15rem;
-        overflow: hidden; /* Prevent scrollbars and cut off overflow */
-        &::-webkit-scrollbar {
-          display: none;
-        }
-    }
-    
-    /* New CSS for dividing the layout */
-    .section-container {
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-    }
-  
-    .section__pic-container {
-      flex: 1; /* Take up 50% of the space */
-      display: flex;
-      justify-content: flex-end; /* Align image to the right */
-    
-    }
-  
-    .about-pic {
-      max-width: 100%; /* Ensure the image fits within its container */
-    }
-  
     .about-details-container {
-      flex: 1; /* Take up 50% of the space */
+      margin-top: 30px;
     }
-    
+    .text-container{
+      padding-top: 10px;
+      padding-right: 0px;
+      text-align:center;
+      margin: 0 10px 0 10px;
+    }
   }
-  
+}
