@@ -48,7 +48,7 @@ const About = () => {
                   
                 </button> */}
                   <button className="btn btn-color-2">
-                    <a href="/assets/Aishwarya_Nikam_final_resume.pdf" className='download' download={true}>
+                    <a href="/assets/Aishwarya_Nikam_Resume_.pdf" className='download' download={true}>
                       Download Resume
                       </a>
                 </button>
