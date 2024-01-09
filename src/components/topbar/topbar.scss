@@ -41,7 +41,7 @@
           justify-content: start;
         }
 
-        .icon{
+        .ficon{
           color: black;
           padding-top: 10px;
           margin: 0px 10px  ;
@@ -81,10 +81,11 @@
       }
     }
   }
+  
 
   &.active {
     background-color: $mainColor;
-    color: white;
+    // color: white;
 
 
     .hamburger {

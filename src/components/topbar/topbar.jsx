@@ -17,16 +17,16 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             genius.
           </a> */}
             <div className="itemContainer">
-            <FontAwesomeIcon icon={faEnvelope} size="xl"  className="icon" />
+            <FontAwesomeIcon icon={faEnvelope} size="xl"  className="ficon" />
             <span>aishnikam31@gmail.com</span>
           </div>
 
           <div className="itemContainer">
-          <a href="https://github.com/nikamaish" target="_blank" rel="noopener"><FontAwesomeIcon icon={faGithub} size="xl" className="icon" /></a>
+          <a href="https://github.com/nikamaish" target="_blank" rel="noopener"><FontAwesomeIcon icon={faGithub} size="xl" className="ficon" /></a>
           </div>  
 
           <div className="itemContainer">
-          <a href="https://www.linkedin.com/in/%F0%9D%90%80%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%B2%F0%9D%90%9A-%F0%9D%90%8D%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A%F0%9D%90%A6-8175221b5/" target="_blank" rel="noopener"><FontAwesomeIcon icon={faLinkedin} size="xl" className="icon"  /></a>
+          <a href="https://www.linkedin.com/in/%F0%9D%90%80%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%B2%F0%9D%90%9A-%F0%9D%90%8D%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%9A%F0%9D%90%A6-8175221b5/" target="_blank" rel="noopener"><FontAwesomeIcon icon={faLinkedin} size="xl" className="ficon"  /></a>
           </div>
         </div>
 
