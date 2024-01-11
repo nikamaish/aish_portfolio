@@ -8,32 +8,33 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/globe.png",
-      title: "Sweet Junction",
+      title: "GuildMasters Website ",
       desc:
-        "Designed a website named Sweet Junction, for purchasing favourite desserts in one place. Designed using HTML, CSS, JS, Flask, and MongoDB Compass,It stores data entered by the user while placing orders.",
+        "Built a website which serves as a Guild for gamers to explore different games, offering events, insights. Deployed frontend and backend on  Firebase and Render. It Contains SignUp, LogIn module built using Restful API using Node.js and Express.js that will securely store user Authentication data in cloud-based platform MongoDB Atlas.",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     
       },
-    {
-      id: "2",
-      icon: "./assets/globe.png",
-      title: "Luminous Homes",
-      desc:
-        "Designed to showcase the beauty of lights, where you can buy them.Designed a User Interface of a website using HTML, CSS, and JS with node JS and mongoDB compass.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    },
+      {
+        id: "2",
+        icon: "./assets/globe.png",
+  
+        title: "Hotel Booking Website",
+        desc:
+          "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+        img:
+          "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      },
     {
       id: "3",
       icon: "./assets/globe.png",
-
-      title: "Weather App",
+      title: "Visual Master",
       desc:
-        "It is created using React JS and it is a user-friendly application that provides real-time weather information from the OpenWeather API. Users can easily search for weather conditions in any location worldwide. ",
+        "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
+    
   ];
 
   const handleClick = (way) => {
