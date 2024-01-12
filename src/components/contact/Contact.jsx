@@ -1,42 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './contact.scss';
 
-const REACT_APP_RECAPTCHA_SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-
-const Contact = () => {
+export default function Contact() {
+  const [message, setMessage] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     message: '',
   });
-  const [messageSent, setMessageSent] = useState(false);
-
-  useEffect(() => {
-    // Initialize reCAPTCHA script when the component mounts
-    const script = document.createElement('script');
-    script.src = 'https://www.google.com/recaptcha/api.js';
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup script when the component unmounts
-      document.head.removeChild(script);
-    };
-  }, []);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Obtain the reCAPTCHA token
-    const recaptchaToken = await executeRecaptcha();
-
-    // Update form data with reCAPTCHA token
-    const data = { ...formData, recaptchaToken };
 
     try {
       const response = await fetch('http://localhost:5000/send-message', {
@@ -44,26 +17,22 @@ const Contact = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
-
-      // Handle the result from the server if needed
-      console.log(result.message);
-
-      setMessageSent(true);
+      if (response.ok) {
+        setMessage(true);
+        setFormData({ email: '', message: '' })
+      } else {
+        console.error('Failed to submit the form');
+      }
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('Error submitting the form:', error);
     }
   };
 
-  const executeRecaptcha = () => {
-    return new Promise((resolve) => {
-      window.grecaptcha.ready(() => {
-        window.grecaptcha.execute(REACT_APP_RECAPTCHA_SITE_KEY, { action: 'submit' }).then(resolve);
-      });
-    });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -87,20 +56,10 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
           ></textarea>
-
-          {/* Add the reCAPTCHA element with the callback attribute */}
-          <div
-            className="g-recaptcha"
-            data-sitekey={REACT_APP_RECAPTCHA_SITE_KEY}
-            data-callback="onRecaptchaSubmit"
-          ></div>
-
           <button type="submit">Send</button>
-          {messageSent && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>
       </div>
     </div>
   );
-};
-
-export default Contact;
+}
