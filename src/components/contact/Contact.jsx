@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import "./contact.scss";
+import React, { useState, useEffect } from 'react';
+import './contact.scss';
 
-// ... (other imports and component code)
-
-const REACT_APP_HCAPTCHA_SITE_KEY = process.env.REACT_APP_HCAPTCHA_SITE_KEY;
+const REACT_APP_RECAPTCHA_SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +9,20 @@ const Contact = () => {
     message: '',
   });
   const [messageSent, setMessageSent] = useState(false);
+
+  useEffect(() => {
+    // Initialize reCAPTCHA script when the component mounts
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script when the component unmounts
+      document.head.removeChild(script);
+    };
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,11 +32,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Obtain the hCaptcha token
-    const hCaptchaToken = window.hcaptcha.getResponse();
+    // Obtain the reCAPTCHA token
+    const recaptchaToken = await executeRecaptcha();
 
-    // Update form data with hCaptcha token
-    const data = { ...formData, hCaptchaToken };
+    // Update form data with reCAPTCHA token
+    const data = { ...formData, recaptchaToken };
 
     try {
       const response = await fetch('http://localhost:5000/send-message', {
@@ -44,6 +56,14 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending message:', error);
     }
+  };
+
+  const executeRecaptcha = () => {
+    return new Promise((resolve) => {
+      window.grecaptcha.ready(() => {
+        window.grecaptcha.execute(REACT_APP_RECAPTCHA_SITE_KEY, { action: 'submit' }).then(resolve);
+      });
+    });
   };
 
   return (
@@ -68,8 +88,12 @@ const Contact = () => {
             onChange={handleChange}
           ></textarea>
 
-          {/* Add the hCaptcha widget here */}
-          <div className="h-captcha" data-sitekey={REACT_APP_HCAPTCHA_SITE_KEY}></div>
+          {/* Add the reCAPTCHA element with the callback attribute */}
+          <div
+            className="g-recaptcha"
+            data-sitekey={REACT_APP_RECAPTCHA_SITE_KEY}
+            data-callback="onRecaptchaSubmit"
+          ></div>
 
           <button type="submit">Send</button>
           {messageSent && <span>Thanks, I'll reply ASAP :)</span>}
