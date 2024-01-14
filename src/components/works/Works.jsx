@@ -90,11 +90,11 @@ export default function Works() {
 
 
               <div className="gitwebsite">
-                  <a href={d.Github} target='_blank' rel='noopener' style={{marginRight:"10px"}}><span>GitHub</span></a> 
+                  <a href={d.Github} target='_blank' rel='noopener' style={{marginRight:"10px"}}>GitHub</a> 
 
                    {d.Website && (
                   <a href={d.Website} target="_blank" rel="noopener">
-                    <span>Website</span>
+                    Website
                   </a>
                   )} 
                   {/* above help to apply website to only certain cards*/}

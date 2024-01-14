@@ -1,5 +1,7 @@
 import React from 'react'
 import "./testimonials.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -12,7 +14,7 @@ export default function Testimonials() {
       title: "Coursera",
       img:
         "https://static.vecteezy.com/system/resources/previews/009/469/630/original/google-logo-isolated-editorial-icon-free-vector.jpg",
-      icon: "assets/Google_Drive.png",
+      // icon: "assets/Google_Drive.png",
       desc:
         "Foundations of User Experience (UX) Design",
       link: "https://drive.google.com/file/d/1RCStPPlwqmL33t8eatT15R4RigexNdyH/view?usp=sharing",  
@@ -23,7 +25,7 @@ export default function Testimonials() {
       title: "Coursera",
       img:
         "https://static.vecteezy.com/system/resources/previews/009/469/630/original/google-logo-isolated-editorial-icon-free-vector.jpg",
-      icon: "assets/Google_Drive.png",
+      // icon: "assets/Google_Drive.png",
       desc:
         "Start the UX Design Process: Empathize, Define,and Ideate ",
       link:"https://drive.google.com/file/d/1wGawXtt3cR0I7FIxXVoYAnhMlL-am0HM/view?usp=sharing",
@@ -35,7 +37,7 @@ export default function Testimonials() {
       title: "Coursera",
       img:
       "https://static.vecteezy.com/system/resources/previews/009/469/630/original/google-logo-isolated-editorial-icon-free-vector.jpg",
-      icon: "assets/Google_Drive.png",
+      // icon: "assets/Google_Drive.png",
       desc:
         "Project Initiation: Starting a Successful Project",
       link:"https://drive.google.com/file/d/1T_CMbcRFbP-ea2PqsKzDn9HGtZrfHOms/view?usp=sharing", 
@@ -54,7 +56,7 @@ export default function Testimonials() {
                 src={d.img}
                 alt=""
               />
-              <a href={d.link} target='_blank' rel='noopener' ><img className="right" src={d.icon} alt="" /></a> 
+              <a href={d.link} target='_blank' rel='noopener'><FontAwesomeIcon icon={faGoogleDrive} style={{color:"black", fontSize:"25px"}} /></a> 
             </div>
             <div className="center">
               {d.desc}
