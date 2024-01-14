@@ -57,7 +57,7 @@ export default function Works() {
         img:
           "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         
-        // projectImg:"https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        projectImg:"https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
           Github:"https://github.com/nikamaish/Hotel_Booking_Site",
       },
   
@@ -77,8 +77,8 @@ export default function Works() {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {data.map((d) => (
-          <div className="container">
+        {data.map((d, index) => (
+          <div className="container" key={d.id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -108,6 +108,7 @@ export default function Works() {
                   <img
                   src={d.projectImg}
                   alt="img"
+                  className={index === 3 ? 'special-img' : ''}
                 />
                 )}
           
