@@ -14,28 +14,36 @@ export default function Works() {
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     
+      projectImg:"/assets/GuildMasters.png"  ,
+
         Github:"https://github.com/nikamaish/GuildMasters",
         Website:"https://gaming-hub-98328.web.app",
 
       },
         {
-      id: "4",
+      id: "2",
       icon: "./assets/globe.png",
       title: "Sweet Junction Website",
       desc:
         "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+
+        projectImg:"/assets/SweetJunction.png"  ,  
       Github:"https://github.com/nikamaish/Sweet_Junction.github.io",
     },
     {
       id: "3",
       icon: "./assets/globe.png",
-      title: "Visual Master Website",
+      title: "VisualMaster Website",
       desc:
         "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+
+        projectImg:"/assets/visualMaster.png"  ,
+        
+        
       Github:"https://github.com/nikamaish/VisualMaster_BE",
       Website:"https://visualmaster-be-project.web.app",
     },
@@ -48,6 +56,8 @@ export default function Works() {
           "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
         img:
           "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        
+        // projectImg:"https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
           Github:"https://github.com/nikamaish/Hotel_Booking_Site",
       },
   
@@ -94,10 +104,13 @@ export default function Works() {
                 </div>
               </div>
               <div className="right">
-                <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                  alt=""
+                {d.projectImg && (
+                  <img
+                  src={d.projectImg}
+                  alt="img"
                 />
+                )}
+          
               </div>
             </div>
           </div>
