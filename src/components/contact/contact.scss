@@ -6,6 +6,7 @@
 
   @include mobile {
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .left {
@@ -66,6 +67,7 @@
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
+        margin-top: 15px;
 
         &:focus {
           outline: none;
