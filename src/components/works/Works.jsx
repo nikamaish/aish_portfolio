@@ -14,9 +14,33 @@ export default function Works() {
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     
+        Github:"https://github.com/nikamaish/GuildMasters",
+        Website:"https://gaming-hub-98328.web.app",
+
       },
-      {
-        id: "2",
+        {
+      id: "4",
+      icon: "./assets/globe.png",
+      title: "Sweet Junction Website",
+      desc:
+        "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
+      img:
+        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      Github:"https://github.com/nikamaish/Sweet_Junction.github.io",
+    },
+    {
+      id: "3",
+      icon: "./assets/globe.png",
+      title: "Visual Master Website",
+      desc:
+        "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
+      img:
+        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      Github:"https://github.com/nikamaish/VisualMaster_BE",
+      Website:"https://visualmaster-be-project.web.app",
+    },
+     {
+        id: "4",
         icon: "./assets/globe.png",
   
         title: "Hotel Booking Website",
@@ -24,22 +48,15 @@ export default function Works() {
           "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
         img:
           "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+          Github:"https://github.com/nikamaish/Hotel_Booking_Site",
       },
-    {
-      id: "3",
-      icon: "./assets/globe.png",
-      title: "Visual Master",
-      desc:
-        "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    },
+  
     
   ];
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 3)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   
@@ -60,8 +77,20 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  {/* <p>Certifiacate</p> */}
-                  <a href="https://github.com/nikamaish" target='_blank' rel='noopener'><span>GitHub</span></a> 
+
+
+              <div className="gitwebsite">
+                  <a href={d.Github} target='_blank' rel='noopener' style={{marginRight:"10px"}}><span>GitHub</span></a> 
+
+                   {d.Website && (
+                  <a href={d.Website} target="_blank" rel="noopener">
+                    <span>Website</span>
+                  </a>
+                  )} 
+                  {/* above help to apply website to only certain cards*/}
+              </div>
+
+
                 </div>
               </div>
               <div className="right">
