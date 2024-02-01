@@ -1,7 +1,10 @@
 import React from 'react'
 import "./works.scss"
 import { useState } from "react";
- 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faGlobe} from '@fortawesome/free-solid-svg-icons' 
+
 export default function Works() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const data = [
@@ -14,7 +17,7 @@ export default function Works() {
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     
-      projectImg:"/assets/GuildMasters.png"  ,
+      projectImg:"./assets/GuildMasters.png"  ,
 
         Github:"https://github.com/nikamaish/GuildMasters",
         Website:"https://gaming-hub-98328.web.app",
@@ -29,8 +32,9 @@ export default function Works() {
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
 
-        projectImg:"/assets/SweetJunction.png"  ,  
+        projectImg:"./assets/SweetJunction.png"  ,  
       Github:"https://github.com/nikamaish/Sweet_Junction.github.io",
+      Website:"https://nikamaish.github.io/Sweet_Junction.github.io",
     },
     {
       id: "3",
@@ -41,7 +45,7 @@ export default function Works() {
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
 
-        projectImg:"/assets/visualMaster.png"  ,
+        projectImg:"./assets/VisualMaster.png",
         
         
       Github:"https://github.com/nikamaish/VisualMaster_BE",
@@ -90,11 +94,11 @@ export default function Works() {
 
 
               <div className="gitwebsite">
-                  <a href={d.Github} target='_blank' rel='noopener' style={{marginRight:"10px"}}>GitHub</a> 
+                  <a href={d.Github} target='_blank' rel='noopener' style={{marginRight:"10px"}}>  <FontAwesomeIcon icon={faGithub} size="xl" className="ficon" />  </a> 
 
                    {d.Website && (
-                  <a href={d.Website} target="_blank" rel="noopener">
-                    Website
+                  <a href={d.Website} target="_blank" rel="noopener" >
+                    <FontAwesomeIcon icon={faGlobe} size="xl" className="ficon" />
                   </a>
                   )} 
                   {/* above help to apply website to only certain cards*/}

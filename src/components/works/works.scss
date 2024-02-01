@@ -28,7 +28,8 @@
   }
 
   .slider {
-    height: 350px;
+    // height: 350px;
+    height: 70%;
     display: flex;
     position: absolute;
     left: 0;
@@ -47,7 +48,7 @@
       justify-content: center;
 
       .item {
-        width: 700px;
+        width: 800px;
         height: 100%;
         background-color: white;
         border-radius: 20px;
@@ -70,6 +71,7 @@
           
          .gitwebsite a{
           text-decoration: none;
+          font-size: 20px;
         
           @include mobile{
               font-size: 15px;
