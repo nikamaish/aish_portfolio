@@ -21,7 +21,7 @@ const jobData = [
     title: 'Machine Learning Intern',
     company: 'YBI Foundation',
     description: 'Gained hands-on experience with programming languages like Python as well as libraries like Pandas , Numpy, scikit-learn, Matplotlib',
-    // timeline: 'July 2022 - Sept 2022',
+    
     image: './assets/YBI.png',
   },
 ];
