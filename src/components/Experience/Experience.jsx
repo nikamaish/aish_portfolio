@@ -38,7 +38,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="work-section">
+    <div className="work-section" id='experience'>
       <div>
         <h1 className="work-title">Experience</h1>
       </div>
@@ -54,7 +54,7 @@ const Experience = () => {
                 <h2 className='company'>{job.company}</h2>
                 <p className='des'>{job.description}</p>
                 {/* {job.timeline && <h4 className='timeline'>{job.timeline}</h4>} */}
-                
+
               </div>
             </div>
           ))}

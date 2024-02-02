@@ -18,11 +18,16 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#works">Projects</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
+          <a href="#experience">Experience</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
           <a href="#testimonials">Certificates</a>
         </li>
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li>
+        
+
       </ul>
     </div>
   );
