@@ -9,6 +9,7 @@ import React from "react" ;
 import {useState} from "react";
 import  Menu from "./components/menu/Menu";
 import About from "./components/about/About";
+import Experience from "./components/Experience/Experience";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
        <About/>
        <Portfolio/>
        <Works/>
+       <Experience/>
        <Testimonials/>
        <Contact/>
      </div>
