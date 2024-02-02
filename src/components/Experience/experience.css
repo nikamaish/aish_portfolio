@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 155vh;
     background-color: white;
 
 }
 .work-title{
     font-size: 50px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .slider {
     display: flex;
@@ -83,7 +83,7 @@
 
 .content h2 {
     font-size: 22px;
-    color: #d1d1d1;
+    color: whitesmoke;
 }
 
 .content h1,
@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 768px) {
     .work-section{
-        height: 160vh;
+        height: 155vh;
     }
     .work-title{
         overflow: hidden;
@@ -137,8 +137,8 @@
         flex-direction: column; /* Change flex-direction to column for smaller screens */
     }
     .card {
-        width: 80vw; /* Adjust width for smaller screens */
-        height: 40vh; /* Adjust height for smaller screens */
+        width: 70vw; /* Adjust width for smaller screens */
+        height: 30vh; /* Adjust height for smaller screens */
     }
     .content h1 {
         font-size: 20px;

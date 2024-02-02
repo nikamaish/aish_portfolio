@@ -53,7 +53,8 @@ const Experience = () => {
                 <h1 className='title'>{job.title}</h1>
                 <h2 className='company'>{job.company}</h2>
                 <p className='des'>{job.description}</p>
-                {job.timeline && <h4 className='timeline'>{job.timeline}</h4>}
+                {/* {job.timeline && <h4 className='timeline'>{job.timeline}</h4>} */}
+                
               </div>
             </div>
           ))}
