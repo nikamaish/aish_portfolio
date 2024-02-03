@@ -19,7 +19,7 @@
 
 .card {
     width: 30vw; /* Increase width as needed */
-    height: 65vh; /* Increase height as needed */
+    height: 50vh; /* Increase height as needed */
     border-radius: 8px;
     position: relative;
     cursor: pointer;
@@ -78,11 +78,12 @@
 }
 
 .content h1 {
+    font-size: 26px;
     color:rgb(255, 0, 51);
 }
 
 .content h2 {
-    font-size: 22px;
+    font-size: 21px;
     color: whitesmoke;
 }
 
@@ -141,10 +142,10 @@
         height: 30vh; /* Adjust height for smaller screens */
     }
     .content h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .content h2 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .content p {
         font-size: 12px;

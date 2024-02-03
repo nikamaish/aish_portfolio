@@ -13,7 +13,7 @@ const jobData = [
     id: 2,
     title: 'Frontend Developer Intern',
     company: 'TCR Innovation',
-    description: ' Worked on project named Sweet Junction, providing a one-stop platform for indulging  favorite desserts Built by using HTML, CSS, and JavaScript. Used Flask to enhance shopping and streamline operations, creating a seamless API for efficient data management with MongoDB Compass',
+    description: ' Worked on project named Sweet Junction, providing a one-stop platform for indulging  favorite desserts Built by using HTML, CSS, and JavaScript. Used Flask to enhance shopping and streamline operations, creating a seamless API for efficient data management with MongoDB',
     image: './assets/TCR.png',
   },
   {

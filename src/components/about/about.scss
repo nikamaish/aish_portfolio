@@ -32,24 +32,6 @@
       &.btn-color-2 {
         border: 0.1rem solid rgb(163, 163, 163);
         font-size: 20px;
-
-        // &:hover {
-        //   cursor: pointer;
-        //   background: rgb(53, 53, 53);
-        //   color: white;
-        // }
-      }
-
-      // .download:hover {
-      //   color: white;
-      // }
-
-      &.btn-color-2 {
-        background: none;
-
-        // &:hover {
-        //   border: rgb(255, 255, 255) 0.1rem solid;
-        // }
       }
     }
   }
@@ -68,8 +50,8 @@
   }
 
   .about-pic {
+    max-width: 100%;
     border-radius: 2rem;
-    max-height: 453.5px;
   }
 
   .details-container {
@@ -106,6 +88,9 @@
   }
 
   .section__pic-container {
+    flex: 0.9;
+    display: flex;
+    justify-content: flex-end;
     margin: auto 10px auto -15rem;
     overflow: hidden;
     &::-webkit-scrollbar {
@@ -113,38 +98,28 @@
     }
   }
 
-  /* New CSS for dividing the layout */
-  .section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section__pic-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .about-pic {
     max-width: 100%;
+    border-radius: 2rem;
   }
 
   .about-details-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (max-width: 768px) {
-   
-     .section-container {
+    .section-container {
       flex-direction: column;
       text-align: center;
       height: 120%; /* Adjusted height for small devices */
     }
+
     .title {
       margin: auto;
       margin-bottom: 50px;
-
     }
 
     .btn-container {
@@ -171,6 +146,7 @@
     }
 
     .section__pic-container {
+      flex: 100%;
       margin: auto;
       order: -1;
     }
@@ -178,10 +154,11 @@
     .about-details-container {
       margin-top: 30px;
     }
-    .text-container{
+
+    .text-container {
       padding-top: 10px;
       padding-right: 0px;
-      text-align:center;
+      text-align: center;
       margin: 0 10px 0 10px;
     }
   }
