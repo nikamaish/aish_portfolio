@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mobile{
+      padding: 10px 10px;
+    }
+
     .left {
       display: flex;
       align-items: center;
@@ -58,6 +62,12 @@
           font-weight: 500;
           padding-left: 10px;
           padding-top: 10px;
+        }
+      }
+       .itemContainer:first-child span{
+       @include mobile{
+          margin-left: -10px;
+          
         }
       }
     }
