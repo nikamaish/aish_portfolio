@@ -51,7 +51,10 @@
 
   .about-pic {
     max-width: 100%;
-    border-radius: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    position: relative;
+    z-index: 1; 
   }
 
   .details-container {
@@ -60,17 +63,16 @@
     border-radius: 2rem;
     border: 0.1rem solid rgb(163, 163, 163);
     text-align: center;
-  }
 
-  .details-container p {
-    padding-top: 10px;
+    p {
+      padding-top: 10px;
+    }
   }
 
   .text-container {
     margin-top: -30px;
     padding-right: 30px;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'EB Garamond', serif, 'Roboto', sans-serif;
     line-height: 1.7;
   }
 
@@ -87,8 +89,12 @@
     align-items: center;
   }
 
+ 
+
   .section__pic-container {
     flex: 0.9;
+    // position: relative;
+    // color: red;
     display: flex;
     justify-content: flex-end;
     margin: auto 10px auto -15rem;
@@ -98,74 +104,59 @@
     }
   }
 
-  .about-pic {
-    max-width: 100%;
-    border-radius: 2rem;
-  }
-
-  .about-details-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   @media (max-width: 768px) {
     .section-container {
       flex-direction: column;
       text-align: center;
-      height: 120%; /* Adjusted height for small devices */
+      height: 120%;
     }
-  
+
     .title {
       margin: auto;
       margin-bottom: 50px;
     }
-  
+
     .details-container {
       padding: 0.5rem;
     }
-  
+
     .about-pic {
+      position: absolute;
       max-width: 60%;
       border-radius: 2rem;
-      margin: auto; /* Center the image horizontally */
-      display: block; /* Ensure margin:auto works for block-level elements */
+      margin: auto;
+      display: block;
     }
-  
+
     .btn-container {
       flex-direction: column;
       align-items: center;
-  
+
       .btn {
         width: 100%;
         margin-bottom: 1rem;
         height: 20vh;
       }
     }
-  
+
     .about-containers {
       display: flex;
       flex-direction: column;
       width: 60%;
-      margin: auto; /* Center the container horizontally */
+      margin: auto;
     }
-  
+
     .section-container {
       flex-direction: column;
       text-align: center;
     }
-  
+
     .section__pic-container {
       flex: 100%;
       margin: auto;
       order: -1;
     }
-  
-    // .about-details-container {
-    //   // margin-top: 30px;
-    // }
-  
+
     .text-container {
       padding-top: 10px;
       padding-right: 0px;
@@ -173,5 +164,4 @@
       margin: 0 10px 0 10px;
     }
   }
-  
 }

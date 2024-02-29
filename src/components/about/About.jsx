@@ -13,10 +13,13 @@ const About = () => {
         <h1 className="title">About Me</h1>
         <div className="section-container">
           <div className="section__pic-container">
+          
             <img
-              src="/assets/aish.jpg"
+              src="/assets/sn.png"
               alt="Profile picture"
               className="about-pic"
+              style={{backgroundColor: "crimson", borderRadius: "50%", width: "25em", height: "90vh"}}
+            
             />
           </div>
           <div className="about-details-container">
