@@ -97,6 +97,42 @@
     background-color: $mainColor;
     // color: white;
 
+    .wrapper {
+      .left {
+        .logo {
+          color: white;
+        }
+
+        .itemContainer {
+          .ficon {
+            color: white;
+          }
+
+          span {
+            color: white;
+          }
+        }
+      }
+
+      .right {
+        .hamburger {
+          span {
+            &:first-child {
+              background-color: white;
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:last-child {
+              background-color: white;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+
 
     .hamburger {
       span {
