@@ -28,7 +28,7 @@ const About = () => {
             <div className="about-containers">
               <div className="details-container">
 
-                <img src="./assets/experience.png" alt="Experience icon" className="icon" />
+                <img src="https://static.thenounproject.com/png/2867276-200.png" alt="Role icon" className="icon"/>
 
                 <h3>Role</h3>
                 <p> FullStack Developer</p>
@@ -37,7 +37,7 @@ const About = () => {
 
               <div className="details-container">
 
-                <img src="./assets/education.png" alt="Education icon" className="icon" />
+                <img src="https://img.freepik.com/premium-vector/graduation-cap-symbol-education-illustration-design_92086-772.jpg" alt="Education icon"  className="icon" />
 
                 <h3>Education</h3>
                 <p>BE Degree In IT</p>

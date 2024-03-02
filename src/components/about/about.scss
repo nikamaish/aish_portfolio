@@ -7,10 +7,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     font-size: 50px;
+    font-size: 50px;
     margin-left: 100px;
     margin-top: 70px;
-  
   }
 
   .btn-container {
@@ -50,8 +49,6 @@
     flex: 1;
   }
 
-
-
   .details-container {
     padding: 1.5rem;
     background: white;
@@ -67,7 +64,7 @@
   .text-container {
     margin-top: -30px;
     padding-right: 30px;
-    font-family: 'EB Garamond', serif, 'Roboto', sans-serif;
+    font-family: "EB Garamond", serif, "Roboto", sans-serif;
     line-height: 1.7;
   }
 
@@ -83,25 +80,21 @@
     height: 80%;
     align-items: center;
   }
-.eclipse{
-  background: linear-gradient(45deg, #fa2650, #ff9567);  // Gradient background
-      border-radius: 50%;  // Use 50% for a perfect circle, or adjust as needed for an oval
+  .eclipse {
+    background: linear-gradient(45deg, #fa2650, #ff9567); // Gradient background
+    border-radius: 50%; // Use 50% for a perfect circle, or adjust as needed for an oval
+    height: 100%;
+    width: 55%;
+    border: 5px solid black;
+
+    .about-pic {
       height: 80%;
-      width: 50%;
-    
-      border: 5px solid black;  
-
-
-.about-pic{
-    height: 80%;
-    width: 90%;
-}
-}
-
-
+      width: 90%;
+    }
+  }
 
   .section__pic-container {
-    flex: 0.7;
+    flex: 0.8;
     display: flex;
     justify-content: flex-end;
     margin: auto 10px auto -15rem;
@@ -127,7 +120,6 @@
       padding: 0.5rem;
     }
 
-  
     .btn-container {
       flex-direction: column;
       align-items: center;
@@ -159,9 +151,18 @@
 
     .text-container {
       padding-top: 10px;
+      // background-color: green;
       padding-right: 0px;
-      text-align: center;
+      text-align:center;
       margin: 0 10px 0 10px;
+    }
+
+    .eclipse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // width: 80%;  // Adjust the width as needed
+      margin: auto;
     }
   }
 }
