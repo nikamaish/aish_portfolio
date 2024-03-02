@@ -25,7 +25,7 @@
     justify-content: center;
 
     h2 {
-      font-size: 30px;
+      font-size: 50px;
     }
 
     form {
@@ -40,6 +40,11 @@
         width: 300px;
         height: 30px;
         font-size: 14px;
+        padding: 5px;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
           width: 200px;
@@ -51,6 +56,11 @@
         width: 300px;
         height: 200px;
         font-size: 14px;
+        padding: 5px;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
           width: 200px;
@@ -60,7 +70,7 @@
 
       button {
         width: 150px;
-        height: 30px;
+        height: 40px;
         color: white;
         background-color: crimson;
         border: none;

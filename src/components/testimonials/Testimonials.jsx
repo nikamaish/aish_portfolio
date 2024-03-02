@@ -2,6 +2,7 @@ import React from 'react'
 import "./testimonials.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
+import { Height } from '@mui/icons-material';
 
 
 
@@ -57,7 +58,13 @@ export default function Testimonials() {
                 src={d.img}
                 alt=""
               />
-              <a href={d.link} target='_blank' rel='noopener'><FontAwesomeIcon icon={faGoogleDrive} style={{color:"black", fontSize:"25px"}} /></a> 
+<a href={d.link} target='_blank' rel='noopener'>
+  <img
+    src="https://1000logos.net/wp-content/uploads/2021/04/Google-Drive-logo.png"
+    style={{ height: '28px', width: '35px',  filter: 'grayscale(0%)' }}
+    alt=""
+  />
+</a>
             </div>
             <div className="center">
               {d.desc}

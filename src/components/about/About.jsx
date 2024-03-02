@@ -18,7 +18,7 @@ const About = () => {
               src="/assets/sn.png"
               alt="Profile picture"
               className="about-pic"
-              style={{backgroundColor: "crimson", borderRadius: "50%", width: "25em", height: "90vh"}}
+              style={{backgroundColor: "rgb(250, 38, 80)", borderRadius: "50%", width: "25em", height: "90vh"}}
             
             />
           </div>
@@ -63,7 +63,10 @@ const About = () => {
 
             <div className="text-container">
               <p>
-              I'm a fourth-year IT student with a passion for exploring new technologies. Web development and UI/UX design have captured my interest, so equipped with Web Development skills. I'm also an avid gamer and enjoy immersing myself in virtual worlds. My hardworking nature drives me to tackle any challenge head-on and ensure tasks are completed with excellence. With a strong commitment to both my studies and personal interests, I'm excited to apply my skills, dedication, and enthusiasm to make a meaningful impact in the field.
+              Hey there! 👋 I'm Aishwarya Nikam, currently cruising through my final year of IT Engineering at P.E.S' Modern College of Engineering in Pune. 🚀 I'm a Full Stack Developer, specializing in something cool called the MERN Stack – it's like a tech toolbox with MongoDB, Express.js, React.js, and Node.js. 🛠️ I've been part of many projects and love making things work on the web!
+ Always on the lookout for new techie skills, I'm into constant learning and staying up-to-date in this tech-savvy world. 📚💡
+Now, let's talk about hobbies! 🎮 Gaming is my absolute jam, and I'm also geeking out about Blockchain for Web 3.0. 💻 One thing about me – when I start something, I make sure to finish it!
+
               </p>
             </div>
           </div>
