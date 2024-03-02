@@ -14,13 +14,15 @@ const About = () => {
         <div className="section-container">
           <div className="section__pic-container">
           
+             <div className="eclipse">     
             <img
               src="/assets/sn.png"
               alt="Profile picture"
               className="about-pic"
-              style={{backgroundColor: "rgb(250, 38, 80)", borderRadius: "50%", width: "25em", height: "90vh"}}
-            
+              
             />
+            </div>
+
           </div>
           <div className="about-details-container">
             <div className="about-containers">

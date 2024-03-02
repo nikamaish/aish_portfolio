@@ -50,13 +50,7 @@
     flex: 1;
   }
 
-  .about-pic {
-    max-width: 100%;
-    border-radius: 50%;
-    border: 0.2rem solid white;
-    position: relative;
-    z-index: 1; 
-  }
+
 
   .details-container {
     padding: 1.5rem;
@@ -89,13 +83,25 @@
     height: 80%;
     align-items: center;
   }
+.eclipse{
+  background: linear-gradient(45deg, #fa2650, #ff9567);  // Gradient background
+      border-radius: 50%;  // Use 50% for a perfect circle, or adjust as needed for an oval
+      height: 80%;
+      width: 50%;
+    
+      border: 5px solid black;  
 
- 
+
+.about-pic{
+    height: 80%;
+    width: 90%;
+}
+}
+
+
 
   .section__pic-container {
-    flex: 0.9;
-    // position: relative;
-    // color: red;
+    flex: 0.7;
     display: flex;
     justify-content: flex-end;
     margin: auto 10px auto -15rem;
@@ -121,14 +127,7 @@
       padding: 0.5rem;
     }
 
-    .about-pic {
-      position: absolute;
-      max-width: 60%;
-      border-radius: 2rem;
-      margin: auto;
-      display: block;
-    }
-
+  
     .btn-container {
       flex-direction: column;
       align-items: center;

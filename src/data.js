@@ -73,7 +73,19 @@ export const languages = [
       img:
         "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png",
     },
-      
+    {
+      id: 5,
+      title: "Redis",
+      img:
+        "https://miro.medium.com/v2/resize:fit:1400/1*Jed-UVwaIqf16oq5f8ATDQ.png",
+    },
+    {
+      id: 6,
+      title: "Socket.io",
+      img:
+        "https://media.dev.to/cdn-cgi/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcsinckon0qskqtaizptv.jpg",
+    }
+    
   ];
   
 
@@ -106,23 +118,31 @@ export const languages = [
     },
     {
       id: 5,
-      title: "Firebase",
+      title: "VS code",
       img:
-        "https://firebase.google.com/images/social.png",
+        "https://miro.medium.com/v2/resize:fit:1400/0*SGbxc-dbU0gyaVWm.jpg",
+    },
+       {
+      id: 6,
+      title: "Docker",
+      img:
+        "https://miro.medium.com/v2/resize:fit:1200/1*j4AQo2lTZ6cEX63QshWf_Q.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "Render",
       img:
         "https://i.pinimg.com/474x/8b/7c/ac/8b7cac4d85303b79158dd3cf2d9b63c8.jpg",
     },
-    // {
-    //   id: 7,
-    //   title: "VS code",
-    //   img:
-    //     "https://code.visualstudio.com/opengraphimg/opengraph-blog.png",
-    // },
-    // {
+    {
+      id: 8,
+      title: "Firebase",
+      img:
+        "https://firebase.google.com/images/social.png",
+    },
+
+    
+    
     
   ];
   
