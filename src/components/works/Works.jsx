@@ -45,7 +45,7 @@ export default function Works() {
         
         title: "Simply Goods Website",
         desc:
-        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+       "SimplyGood is an e-commerce platform like Amazon and Flipkart. Deployed on cloud flatforms like Firebase and Vercel. It's built with React.js for a dynamic interface, uses Context API for state management, and employs Node.js with Express for the backend. MongoDB ensures efficient data handling and JWT for security.",
         img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         
@@ -71,8 +71,7 @@ export default function Works() {
       icon: "./assets/globe.png",
 
       title: "Quiz Web App",
-      desc:
-        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+      desc:"It integrates Medistream to utilize the microphone and camera, ensuring secure and monitored participation. Ideal for educational institutions and certification bodies, it features time limits for each quiz and provides warnings as deadlines approach. Throughout the quiz, the camera remains active to monitor the candidate, ensuring integrity and authenticity.",
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
       
@@ -85,8 +84,7 @@ export default function Works() {
       icon: "./assets/globe.png",
 
       title: "WebCraft Editor",
-      desc:
-        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+      desc:"Web Craft Editor is an innovative platform where you can code and create shapes or tackle similar coding challenges. Ideal for developers and students, it offers a hands-on, interactive environment to practice and enhance coding skills. With real-time feedback and a variety of challenges, users can improve their proficiency in a fun and engaging way.",
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
       
@@ -99,8 +97,8 @@ export default function Works() {
         icon: "./assets/globe.png",
   
         title: "E-Signature Studio",
-        desc:
-          "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+        desc:"E-Signature Studio is a user-friendly platform where you can create your digital signature and download it for use anytime. Built using Canvas, it offers a smooth and intuitive interface for drawing and customizing your signature. Perfect for professionals and businesses, E-Signature Studio ensures your signature is always accessible and ready for any document or contract.",
+
         img:
           "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         
