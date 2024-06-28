@@ -23,8 +23,23 @@ export default function Works() {
         Website:"https://gaming-hub-98328.web.app",
 
       },
+      {
+        id: "2",
+        icon: "./assets/globe.png",
+        title: "VisualMaster Website",
+        desc:
+          "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
+        img:
+          "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+  
+          projectImg:"./assets/VisualMaster.png",
+          
+          
+        Github:"https://github.com/nikamaish/VisualMaster_BE",
+        Website:"https://vm-frontend-phi.vercel.app",
+      },
         {
-      id: "2",
+      id: "3",
       icon: "./assets/globe.png",
       title: "Sweet Junction Website",
       desc:
@@ -36,23 +51,37 @@ export default function Works() {
       Github:"https://github.com/nikamaish/Sweet_Junction.github.io",
       Website:"https://nikamaish.github.io/Sweet_Junction.github.io",
     },
-    {
-      id: "3",
-      icon: "./assets/globe.png",
-      title: "VisualMaster Website",
-      desc:
-        "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
 
-        projectImg:"./assets/VisualMaster.png",
-        
-        
-      Github:"https://github.com/nikamaish/VisualMaster_BE",
-      Website:"https://visualmaster-be-project.web.app",
+    {
+      id: "4",
+      icon: "./assets/globe.png",
+
+      title: "Simply Goods Website",
+      desc:
+        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+      img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      
+      projectImg:"./assets/SimplyGoods.png",
+        Github:"https://github.com/nikamaish/simply_Goods",
+        Website: 'https://simplygoods-aish.web.app'
+    },
+    {
+      id: "5",
+      icon: "./assets/globe.png",
+
+      title: "Quiz Web App",
+      desc:
+        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+      img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      
+      projectImg:"./assets/QuizApp.png",
+        Github:"https://github.com/nikamaish/Quiz_App",
+        Website: 'https://nikamaish.github.io/Quiz_App'
     },
      {
-        id: "4",
+        id: "5",
         icon: "./assets/globe.png",
   
         title: "Hotel Booking Website",
@@ -112,7 +141,7 @@ export default function Works() {
                   <img
                   src={d.projectImg}
                   alt="img"
-                  className={index === 3 ? 'special-img' : ''}
+                  className={index === 5 ? 'special-img' : ''}
                 />
                 )}
           
