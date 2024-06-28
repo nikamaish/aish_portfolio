@@ -57,8 +57,7 @@ export default function Works() {
     id: "4",
     icon: "./assets/globe.png",
     title: "Sweet Junction Website",
-    desc:
-      "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
+    desc:"Built a website which serves as a Guild for gamers to explore different games, offering events, insights. Deployed frontend and backend on  Firebase and Render. It Contains SignUp, LogIn module built using Restful API using Node.js and Express.js that will securely store user Authentication data in cloud-based platform MongoDB Atlas.",
     img:
       "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
 
