@@ -38,34 +38,34 @@ export default function Works() {
         Github:"https://github.com/nikamaish/VisualMaster_BE",
         Website:"https://vm-frontend-phi.vercel.app",
       },
-        {
-      id: "3",
-      icon: "./assets/globe.png",
-      title: "Sweet Junction Website",
-      desc:
-        "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-
-        projectImg:"./assets/SweetJunction.png"  ,  
-      Github:"https://github.com/nikamaish/Sweet_Junction.github.io",
-      Website:"https://nikamaish.github.io/Sweet_Junction.github.io",
-    },
-
-    {
-      id: "4",
-      icon: "./assets/globe.png",
-
-      title: "Simply Goods Website",
-      desc:
-        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
       
-      projectImg:"./assets/SimplyGoods.png",
+      {
+        id: "3",
+        icon: "./assets/globe.png",
+        
+        title: "Simply Goods Website",
+        desc:
+        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+        img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        
+        projectImg:"./assets/SimplyGoods.png",
         Github:"https://github.com/nikamaish/simply_Goods",
         Website: 'https://simplygoods-aish.web.app'
-    },
+      },
+      {
+    id: "4",
+    icon: "./assets/globe.png",
+    title: "Sweet Junction Website",
+    desc:
+      "Developed a website which visualizes real time stock market data and crypto data through graphs for better understanding,  particularly catering to newcomers in the stock market world. Set up and deployed on cloud based platform Firebase. Used MongoDB Atlas to store user data and authentication data. ",
+    img:
+      "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+
+      projectImg:"./assets/SweetJunction.png"  ,  
+    Github:"https://github.com/nikamaish/Sweet_Junction.github.io",
+    Website:"https://nikamaish.github.io/Sweet_Junction.github.io",
+  },
     {
       id: "5",
       icon: "./assets/globe.png",
@@ -80,18 +80,33 @@ export default function Works() {
         Github:"https://github.com/nikamaish/Quiz_App",
         Website: 'https://nikamaish.github.io/Quiz_App'
     },
+    {
+      id: "6",
+      icon: "./assets/globe.png",
+
+      title: "WebCraft Editor",
+      desc:
+        "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
+      img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      
+      projectImg:"./assets/WebCraftEditor.png",
+        Github:"https://github.com/nikamaish/HTML_CSS_Editor",
+        Website: 'https://nikamaish.github.io/HTML_CSS_Editor/'
+    },
      {
-        id: "5",
+        id: "7",
         icon: "./assets/globe.png",
   
-        title: "Hotel Booking Website",
+        title: "E-Signature Studio",
         desc:
           "Developed a hotel booking website using ReactJS for the user interface and Express.js with Node.js for the technical architecture and authorization. Implemented secure user registration and login functionality, utilizing bcrypt for password hashing and incorporating Cookies and JWT  for authentication and authorization ",
         img:
           "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         
-        projectImg:"https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-          Github:"https://github.com/nikamaish/Hotel_Booking_Site",
+        projectImg:"./assets/Signature.png",
+          Github:"https://github.com/nikamaish/Signature_App",
+          Website:'https://nikamaish.github.io/Signature_App/'
       },
   
     
@@ -99,7 +114,7 @@ export default function Works() {
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 3)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length - 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   
@@ -141,7 +156,7 @@ export default function Works() {
                   <img
                   src={d.projectImg}
                   alt="img"
-                  className={index === 5 ? 'special-img' : ''}
+                  className={index === 7 ? 'special-img' : ''}
                 />
                 )}
           
