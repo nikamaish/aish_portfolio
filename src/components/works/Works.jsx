@@ -57,7 +57,7 @@ export default function Works() {
     id: "4",
     icon: "./assets/globe.png",
     title: "Sweet Junction Website",
-    desc:"Built a website which serves as a Guild for gamers to explore different games, offering events, insights. Deployed frontend and backend on  Firebase and Render. It Contains SignUp, LogIn module built using Restful API using Node.js and Express.js that will securely store user Authentication data in cloud-based platform MongoDB Atlas.",
+    desc:"Developed a website named Sweet Junction, providing a one-stop platform for indulging in one's favorite desserts. Built by using HTML, CSS, and JavaScript. I used Flask to enhance shopping and streamline operations, creating a seamless API for efficient data management with MongoDB Compass",
     img:
       "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
 
